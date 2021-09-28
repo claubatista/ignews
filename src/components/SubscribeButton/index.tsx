@@ -1,7 +1,14 @@
 import styles from "./styles.module.scss";
 
-export function SubcribeButton() {
+interface SubcribeButtonProps {
+  priceId: string;
+}
+
+export function SubcribeButton({ priceId }: SubcribeButtonProps) {
   return (
-   <button className={styles.subscribeButton} type="button"> Subscribe now</button>
-  )
+    <button className={styles.subscribeButton} type="button">
+      {" "}
+      Subscribe now
+    </button>
+  );
 }
